@@ -1,0 +1,16 @@
+    h1{
+        text-align: center;
+        font-style: oblique;
+        font-size: 100px;
+    };
+
+    .container{
+        display: flex;
+        justify-content: center;
+    };
+
+    .row {
+        border: 1 px;
+        border-radius: 50%;
+    };
+    
