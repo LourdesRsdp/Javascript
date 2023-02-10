@@ -15,18 +15,16 @@
     </div>
     <div class="container">
         <input type="number" id="a">
-        <br><br>
         <input type="number" id="b">
+        <br>
+        <input type="text" id="c">
     </div>
     <br><br>
     <div class="row">
-        <button type="button" onclick="mathSum(a, b)" name ="suma">+</button>
-        <button type="button" onclick="mathRest(a, b)" name ="resta">-</button> 
-        <button type="button" onclick="mathMult(a, b)" name="multi">*</button>
-        <button type="button" onclick="mathDiv(a, b)" name="divis">/</button>
+        <button type="button" onclick="showResult('suma')" name="suma">+</button>
+        <button type="button" onclick="showResult('resta')" name="resta">-</button> 
+        <button type="button" onclick="showResult('multi')" name="multi">*</button>
+        <button type="button" onclick="showResult('divis')" name="divis">/</button>
     </div>
-
-
-
     <script src="app.js"></script>
 </body> 
