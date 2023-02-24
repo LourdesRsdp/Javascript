@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    text-decoration: overline underline;
+}
+
+.row {
+    display: flex;
+    background-color: #fffbfb;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.col-50 {
+    
+    width: 50%;
+    flex: 50%;
+    padding: 5%;
+    border: 3px solid #ccb7b7;
+    align-content: center;
+    font-size: x-small;
+}
