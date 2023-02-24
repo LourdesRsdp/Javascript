@@ -64,3 +64,7 @@ function mathDiv(a, b) {
 
     return result;
 }
+
+function igual(){
+    
+}
