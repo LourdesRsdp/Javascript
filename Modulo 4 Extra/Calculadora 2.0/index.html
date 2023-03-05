@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="site.css" />
+  <title>Caulculadora Modulo 4</title>
+</head>
+
+<body>
+    <h1>Calculadora 2.0</h1>
+    <div class="container">
+        <input type="number" placeholder="Introduce un valor" id="pantalla" autofocus>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="cell">
+            <button type="button" onclick="calcular('suma')" name="suma">+</button>
+        </div>
+        <div class="cell">
+            <button type="button" onclick="calcular('resta')" name="resta">-</button>
+        </div>
+        <div class="cell">
+            <button type="button" onclick="calcular('multi')" name="multi">*</button>
+        </div>
+        <div class="cell">
+            <button type="button" onclick="calcular('divis')" name="divis">/</button>
+        </div>
+        <div class="cell">
+            <button type="button" onclick="igual()">=</button>
+        </div>
+        <div class="cell">
+            <button type="button" onclick="borrar()">C</button>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>

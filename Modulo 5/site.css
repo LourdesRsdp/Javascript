@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(240, 239, 224);
+}
+h2{
+    text-align: center;
+    text-shadow: 0.12em 0.1em #d5c1c1;
+    -webkit-text-stroke: 0.5px rgb(2, 148, 31);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

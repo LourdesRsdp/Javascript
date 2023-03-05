@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="site.css" />
+    <title>Reserva Hotel</title>
+</head>
+
+<body>
+    <h1>Reserva Hotel</h1>
+    <div class="container">
+
+        <div class="parts">
+            <select name="habitacion" id="habitacion">
+                <option value="Standard" id="stand">Standard</option>
+                <option value="Junior Suite" id="junior">Junior Suite</option>
+                <option value="Suite" id="suite">Suite</option>
+            </select>
+        </div class="parts">
+
+        <div class="parts">
+            <input type="checkbox" id="spa" checked +="20">
+            <label>Spa</label>
+        </div>
+
+        <div class="parts">
+            <select name="ocupacion" id="ocupacion">
+                <option value="Individual">Individual</option>
+                <option value="Doble">Doble</option>
+                <option value="Triple">Triple</option>
+            </select>
+        </div>
+
+        <div class="parts">
+            <label for="noches">Número de noches</label><br>
+            <input type="number" id="noches" name="noches" placeholder="Noches de hotel" min="1">
+        </div>
+
+        <div class="parts">
+            <label for="nochesParking">Número de noches (Parking)</label><br>
+            <input type="number" id="nochesParking" name="nochesParking" placeholder="Noches de Parking" min="0">
+        </div>
+
+        <div class="parts">
+            <button type="button" onclick="calcular()" id="boton">Calcula mi estancia</button>
+        </div>
+        
+    </div>
+    <br>
+    <div class="container">
+        <div class="parts">
+            <label for="result">Precio final</label><br>
+            <input type="text" id="resultado">
+        </div>
+        
+    </div>
+    <script src="hotel.js"></script>
+</body>
