@@ -28,8 +28,8 @@
         premium: false
     }
 ];
-
-//Estructura carrito
+ 
+//Estructura carrito HTML
 const table = document.createElement('table');
 
 const thead = document.createElement('thead');
@@ -89,7 +89,7 @@ carrito.forEach(item => {
 table.appendChild(tbody);
 document.body.appendChild(table);
 
-//Mostrar estructura carrito
+//Mostrar estructura carrito (en consola)
 function showProduct(carrito) {
     console.log("Nombre de producto: " + carrito.name + " ID: " + carrito.id + " Precio: " + carrito.price);
 }
@@ -125,7 +125,6 @@ function getTotal(){
     carrito.forEach(product => {
         total += product.price * product.count;
     });
-
     return total;
 }
 console.log(getTotal());
@@ -157,4 +156,16 @@ function deliveryCost(){
 }
 deliveryCost();
 
+//Aplicar un descuento del 5% si la compra es mayor de 50 €
+function discount() {
+    
+    let discount = 0;
+    if (getTotal() > 50) {
+        discount = getTotal() * 0.05 * (-1);
+    }
+    let result = 0;
+    result = getTotal() + discount;
+    return result;
+}
 
+console.log(discount());
