@@ -1,0 +1,67 @@
+body{
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    font-family: monospace; 
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: monospace;
+    margin: 0px 20px 0px 20px;
+    padding-left: 2%;
+    border: #555 1px solid;
+    box-shadow: 1px 1px 4px 1px #a39f9f;
+    background-color: rgba(255, 255, 195, 0.142);
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    border: #555 1px solid;
+    background-color: rgba(255, 255, 195, 0.142);
+    box-shadow: 1px 1px 4px 1px #a39f9f;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    font-family: monospace;
+}
+.col-25 {
+    flex: 25%;
+    column-rule: 4px double #ff00ff00;
+}
+
+
+.col-50 {
+    flex: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 45%;
+    text-shadow: 1px 2px 2px rgba(229, 103, 124, 0.44);
+}
+
+.input1 {
+    
+    background-color: #3cbc8daf;
+    color: white;
+    border: 0.2px solid #555;
+    border-radius: 10%;
+    width: 10%;
+    margin-left: 40%;
+    padding-left: 30%;
+    text-align: center;
+}
+
+.buton{
+    text-align: center;
+    
+}
+.buutton{
+    width: 200px;
+    box-shadow: 0px 5px 5px #888888;
+    background-color: rgba(255, 255, 195, 0.142);
+}
