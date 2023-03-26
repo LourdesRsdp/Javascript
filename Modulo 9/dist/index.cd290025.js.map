@@ -1,0 +1,1 @@
+{"mappings":"AAAA,+CAA+C;AAE/C,SAAS,KAAK,CAAC","sources":["Desktop/Repositorios/Javascript/Modulo 9/src/index.js"],"sourcesContent":["//import * as endpoints from \"./data-business\";\r\n\r\ndocument.write(\"Hello Playground!\");\r\n"],"names":[],"version":3,"file":"index.cd290025.js.map","sourceRoot":"/__parcel_source_root/"}
