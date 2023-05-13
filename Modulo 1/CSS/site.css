@@ -1,93 +1,125 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0 32px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    margin: auto;
-    width: 50%;
-  }
-  
-  .data {
-    padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 32px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+.data {
+  padding: 16px;
+}
+
+.img {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  border-radius: 50%;
+  max-width: 20%;
+  height: auto;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .img {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-  }
-  
-  img.avatar {
-    border-radius: 50%;
-    max-width: 20%;
-    height: auto;
-  }
-  
-  @keyframes vibrate {
-    0% { transform: rotate(0deg); }
-    10% { transform: rotate(-22deg); }
-    20% { transform: rotate(22deg); }
-    30% { transform: rotate(0deg); }
-    40% { transform: rotate(22deg); }
-    50% { transform: rotate(-22deg); }
-    60% { transform: rotate(0deg); }
-    70% { transform: rotate(-22deg); }
-    80% { transform: rotate(22deg); }
-    90% { transform: rotate(0deg); }
-    100% { transform: rotate(-22deg); }
+  10% {
+    transform: rotate(-22deg);
   }
 
-  img:hover {
-
-    animation: vibrate 0.5s;
-    animation-iteration-count: infinite;
+  20% {
+    transform: rotate(22deg);
   }
 
-  .zoom {
-    padding: 50px;
-    transition: transform .2s;
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.5); 
-  }
-    
-  .data,
-  #actions {
-    padding: 16px;
-  }
-  
-  button {
-    background-color: #c7b93e;
-    border: none;
-    color: white;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    box-shadow: -50px 0px rgba(0,0,0,0.5);
-    box-shadow: 50px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px -50px rgba(0,0,0,0.5);
-    box-shadow: 0px -50px rgba(0,0,0,0.5);
-    box-shadow: 10px 10px rgba(0,0,0,0.5);
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    box-shadow: 0 0 0 50px rgba(0,0,0,0.1);
-    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
-    border-radius: 12%;
+  30% {
+    transform: rotate(0deg);
   }
 
-  button:hover {
-    background-color: green;
-    border-radius: 12%;
+  40% {
+    transform: rotate(22deg);
   }
+
+  50% {
+    transform: rotate(-22deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(-22deg);
+  }
+
+  80% {
+    transform: rotate(22deg);
+  }
+
+  90% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-22deg);
+  }
+}
+
+img:hover {
+
+  animation: vibrate 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.data,
+#actions {
+  padding: 16px;
+}
+
+button {
+  background-color: #c7b93e;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: -50px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 50px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -50px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 12%;
+}
+
+button:hover {
+  background-color: green;
+  border-radius: 12%;
+}

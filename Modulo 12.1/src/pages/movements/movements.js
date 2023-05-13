@@ -47,10 +47,10 @@ if(existsAccount){
     });
 
 } else {
-    getMovements().then(movements => {
+    getovements().then(movements => {
         console.log(movements); 
         viewModelMovements = mapMovementsFromApiToViewModel(movements);
         addMovementRows(viewModelMovements);
-    }); 
+    }); M
 }
 
